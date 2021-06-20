@@ -1,0 +1,123 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-white-color);
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &__container {
+      position: relative;
+      padding: 48px 40px;
+    }
+
+    &__close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+    }
+
+    &__close-icon {
+      fill: var(--primary-text-color);
+      transition: fill var(--transition-duration) var(--transition-timing-func);
+    }
+
+    &__close-btn:hover &__close-icon,
+    &__close-btn:focus &__close-icon {
+      fill: var(--accent-color);
+    }
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: var(--primary-text-color);
+      transition: color var(--transition-duration) var(--transition-timing-func);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-color);
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__nav {
+      margin-bottom: 302px;
+    }
+
+    &__contacts {
+      margin-bottom: 64px;
+    }
+
+    &__tel-link {
+      color: var(--accent-color);
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+    }
+
+    &__mail-link {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--grey-text-color);
+    }
+    &__social-list {
+      display: flex;
+    }
+
+    &__soc-item {
+      position: relative;
+    }
+
+    &__soc-item:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &__soc-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(33, 33, 33, 0.2);
+      width: 1px;
+      bottom: 0;
+      height: 22px;
+      right: -10px;
+    }
+
+    &__social-link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
