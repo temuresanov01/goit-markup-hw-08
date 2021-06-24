@@ -1,17 +1,103 @@
+// .header-main {
+//   color: var(--title-text-color-secondary);
+//   display: flex;
+//   align-items: center;
+//   border-bottom: 1px solid #ececec;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+// }
+// .header-main__container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .header-main__nav {
+//   display: flex;
+//   align-items: center;
+// }
 .header-main {
   color: var(--title-text-color-secondary);
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
-.header-main__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+@media screen and (max-width: 767px) {
+  .header-main {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &__mobile-menu-btn {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-text-color);
+      }
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
-.header-main__nav {
-  display: flex;
-  align-items: center;
+
+@media screen and (min-width: 768px) {
+  .header-main {
+    height: 80px;
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 84px;
+    }
+
+    &__nav-menu {
+      margin-left: 88px;
+    }
+
+    &__mobile-menu-btn {
+      display: none;
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-main {
+    display: flex;
+    height: 80px;
+    background-color: var(--title-text-color-secondary);
+    border-bottom: 1px solid #ececec;
+
+    &__nav {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav-menu {
+      margin-left: 93px;
+    }
+
+    &__mobile-menu-btn {
+      display: none;
+    }
+    &_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }

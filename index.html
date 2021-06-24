@@ -27,9 +27,11 @@
           <a class="logo" lang="en" href="index.html"
             ><span class="logo-web">Web</span>Studio</a
           >
-          <ul class="website-nav-list">
+          <ul class="website-nav-list header-main__nav-menu">
             <li class="website-nav-list__item">
-              <a class="website-nav-list__link--current" href="index.html"
+              <a
+                class="website-nav-list__link website-nav-list__link--current"
+                href="index.html"
                 >Студия</a
               >
             </li>
@@ -43,10 +45,20 @@
             </li>
           </ul>
         </nav>
+        <!-- Кнопка бургер -->
+        <button
+          type="button"
+          class="header-main__mobile-menu-btn"
+          data-menu-button
+        >
+          <svg width="40" height="40" class="header__mobile-menu-icon">
+            <use href="./images/sprite.svg#icon-mobile-menu-icon"></use>
+          </svg>
+        </button>
         <ul class="contacts-nav-list">
           <li class="contacts-nav-list__item">
             <a class="contacts-nav-list__link" href="mailto:info@devstudio.com"
-              ><svg class="contacts-nav-list__icon" width="16" height="12">
+              ><svg class="contacts-nav-list__mail-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -54,7 +66,7 @@
           </li>
           <li class="contacts-nav-list__item">
             <a class="contacts-nav-list__link" href="tel:+380961111111">
-              <svg class="contacts-nav-list__icon" width="10" height="16">
+              <svg class="contacts-nav-list__phone-icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -62,11 +74,66 @@
           </li>
         </ul>
       </div>
+      <!-- меню для мобилки -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="" height="25" width="25">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-phone">
+              <a
+                class="mobile-menu__contacts-phone-link"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-email">
+              <a
+                class="mobile-menu__contacts-email-link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__network">
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--Основной контент-->
     <main>
       <!--Контейнер для заказа-->
-      <section class="section section-hero">
+      <!-- <section class="section section-hero">
         <div class="container">
           <h1 class="section-hero__title">
             Эффективные решения для вашего бизнеса
@@ -75,10 +142,10 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--Секция особенностей-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <ul class="feature-list">
             <li class="feature-list__item">
@@ -143,9 +210,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Секция чем мы занимаемся-->
-      <section class="section we-make">
+      <!-- <section class="section we-make">
         <div class="container">
           <h2 class="we-make__title">Чем мы занимаемся</h2>
           <ul class="we-make__list">
@@ -175,9 +242,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Наша команда-->
-      <section class="section section-team">
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="section-team__list">
@@ -349,9 +416,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Постоянные-клиенты -->
-      <section class="section section-client">
+      <!-- <section class="section section-client">
         <h2 class="section-client__title">Постоянные клиенты</h2>
         <ul class="section-client__list">
           <li class="section-client__company--item">
@@ -399,13 +466,13 @@
             </a>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
     <!--подвал страницы-->
-    <footer class="footer">
-      <div class="container footer-container">
-        <!--Адрес и контакты-->
-        <address class="footer-address" id="address">
+    <!-- <footer class="footer">
+      <div class="container footer-container"> -->
+    <!-- Адрес и контакты -->
+    <!-- <address class="footer-address" id="address">
           <a class="logo-white" lang="en" href="index.html"
             ><span class="logo-web">Web</span>Studio</a
           >
@@ -485,7 +552,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- ===============МОДАЛЬНОЕ ОКНО=============== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
