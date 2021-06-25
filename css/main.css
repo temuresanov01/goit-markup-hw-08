@@ -437,9 +437,6 @@ body {
   .feature-list__item:not(:last-child) {
     margin-right: 30px;
   }
-  .feature-list__item:not(:last-child) {
-    width: 270px;
-  }
 }
 
 .feature-list__title {
@@ -1218,6 +1215,12 @@ body {
 .footer-subscribe-container__icon--send {
   fill: var(--title-text-color-secondary);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .we-make {
+    display: none;
+  }
 }
 
 .we-make {

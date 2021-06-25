@@ -48,9 +48,9 @@
 
   .feature-list__item:not(:last-child) {
     margin-right: 30px;
-    & {
-      width: 270px;
-    }
+    // & {
+    //   width: 270px;
+    // }
   }
 }
 .feature-list__title {
