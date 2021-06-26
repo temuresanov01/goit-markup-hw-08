@@ -1905,6 +1905,9 @@ body {
   .mobile-menu__nav-link {
     color: var(--title-text-color);
   }
+  .nav-current {
+    color: var(--accent-text-color);
+  }
   .mobile-menu__contacts {
     margin-bottom: 64px;
   }
@@ -1935,7 +1938,14 @@ body {
     letter-spacing: 0.02em;
   }
   .mobile-menu__network-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+  .mobile-menu__network-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  .mobile-menu__network-item:not(:first-child) {
+    padding-left: 10px;
   }
   .mobile-menu__network-link {
     color: var(--accent-text-color);
