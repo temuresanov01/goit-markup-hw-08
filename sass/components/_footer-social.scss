@@ -1,52 +1,130 @@
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-.footer-social-container {
-  margin-left: 70px;
-}
-.footer-social-container__title {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.footer-social-container__list {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-social-container__item {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
+@media screen and (max-width: 767px) {
+  .footer-address {
+    margin-bottom: 60px;
+  }
+  .footer-social-container__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-social-container__list {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-container__item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer-subscribe-container__title {
+    margin-top: 60px;
+  }
+
+  .footer-social-container__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-text-color);
+      &:hover .social-icon,
+      &:focus .social-icon {
+        fill: var(--title-text-color-secondary);
+      }
+    }
+  }
+  .footer-social-container__icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.footer-social-container__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-text-color);
-    &:hover .social-icon,
-    &:focus .social-icon {
-      fill: var(--title-text-color-secondary);
-    }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe-container {
+    display: block;
+    margin: auto;
+  }
+
+  .footer-subscribe-container__input {
+    width: 450px;
+  }
+
+  .tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .footer-address {
+    margin-right: 165px;
   }
 }
-.footer-social-container__icon {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-social-container {
+    margin-left: 70px;
+  }
+  .footer-social-container__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-social-container__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-social-container__item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer-social-container__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-text-color);
+      &:hover .social-icon,
+      &:focus .social-icon {
+        fill: var(--title-text-color-secondary);
+      }
+    }
+  }
+  .footer-social-container__icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
