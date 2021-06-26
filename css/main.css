@@ -506,7 +506,6 @@ body {
 .logo-white {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color-secondary);
@@ -518,6 +517,18 @@ body {
 
 .logo-white:hover, .logo-white:focus {
   color: var(--accent-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .logo-white {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-white {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -578,6 +589,50 @@ body {
     display: block;
     margin: auto;
   }
+  .footer-social-container__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-social-container__list {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-container__item {
+    margin-right: 10px;
+  }
+  .footer-social-container__item:last-child {
+    margin-right: 0;
+  }
+  .footer-social-container__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-social-container__link:hover, .footer-social-container__link:focus {
+    background-color: var(--accent-text-color);
+  }
+  .footer-social-container__link:hover:hover .social-icon,
+  .footer-social-container__link:hover:focus .social-icon, .footer-social-container__link:focus:hover .social-icon,
+  .footer-social-container__link:focus:focus .social-icon {
+    fill: var(--title-text-color-secondary);
+  }
+  .footer-social-container__icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .footer-subscribe-container__input {
     width: 450px;
   }
@@ -588,6 +643,10 @@ body {
   }
   .footer-address {
     margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  .footer-social-container {
+    margin-bottom: 60px;
   }
 }
 
@@ -1508,10 +1567,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-subscribe-container {
-    margin-left: 93px;
+    margin-left: 0px;
   }
   .footer-subscribe-container__input {
-    width: 358px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -1520,16 +1583,57 @@ body {
     line-height: 1.25;
     background-color: rgba(33, 150, 243, 0);
     padding-left: 16px;
-    margin-right: 12px;
+    margin: auto;
+    margin-bottom: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   .footer-subscribe-container__input:hover, .footer-subscribe-container__input:focus {
     outline: none;
   }
+  .footer-subscribe-container__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line: height 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-subscribe-container__button--subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-text-color);
+  color: var(--title-text-color-secondary);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-container__button--subscribe:hover, .footer-subscribe-container__button--subscribe:focus {
+  background-color: #188ce8;
+}
+
+.footer-subscribe-container__icon--send {
+  fill: var(--title-text-color-secondary);
+  margin-left: 10px;
 }
 
 .footer-subscribe-container__title {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1548,7 +1652,7 @@ body {
   background-color: var(--accent-text-color);
   color: var(--title-text-color-secondary);
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
