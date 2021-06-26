@@ -29,9 +29,13 @@
           <a class="logo" lang="en" href="index.html"
             ><span class="logo-web">Web</span>Studio</a
           >
-          <ul class="website-nav-list">
+          <ul class="website-nav-list header-main__nav-menu">
             <li class="website-nav-list__item">
-              <a class="website-nav-list__link" href="index.html">Студия</a>
+              <a
+                class="website-nav-list__link website-nav-list__link"
+                href="index.html"
+                >Студия</a
+              >
             </li>
             <li class="website-nav-list__item">
               <a
@@ -41,16 +45,24 @@
               >
             </li>
             <li class="website-nav-list__item">
-              <a class="website-nav-list__link" href="#address-portfolio"
-                >Контакты</a
-              >
+              <a class="website-nav-list__link" href="#address">Контакты</a>
             </li>
           </ul>
         </nav>
+        <!-- Кнопка бургер -->
+        <button
+          type="button"
+          class="header-main__mobile-menu-btn"
+          data-menu-button
+        >
+          <svg width="40" height="40" class="header__mobile-menu-icon">
+            <use href="./images/sprite.svg#icon-mobile-menu-icon"></use>
+          </svg>
+        </button>
         <ul class="contacts-nav-list">
           <li class="contacts-nav-list__item">
             <a class="contacts-nav-list__link" href="mailto:info@devstudio.com"
-              ><svg class="contacts-nav-list__icon" width="16" height="12">
+              ><svg class="contacts-nav-list__mail-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -58,13 +70,68 @@
           </li>
           <li class="contacts-nav-list__item">
             <a class="contacts-nav-list__link" href="tel:+380961111111">
-              <svg class="contacts-nav-list__icon" width="10" height="16">
+              <svg class="contacts-nav-list__phone-icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+      </div>
+      <!-- меню для мобилки -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="" height="25" width="25">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-phone">
+              <a
+                class="mobile-menu__contacts-phone-link"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-email">
+              <a
+                class="mobile-menu__contacts-email-link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__network">
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__network-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Основной контент портфолио-->
@@ -316,57 +383,59 @@
     <!--подвал страницы портфолио-->
     <footer class="footer">
       <div class="container footer-container">
-        <!--Адрес и контакты-->
-        <address class="footer-address" id="address-portfolio">
-          <a class="logo-white" lang="en" href="index.html"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <a
-            class="footer-address__location"
-            href="https://goo.gl/maps/ibRqbfUvFssrjPC37"
-            target="_blank"
-            rel="noreferrer noopener"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-          <a class="footer-address__link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="footer-address__link" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </address>
-        <div class="footer-social-container">
-          <p class="footer-social-container__title">присоединяйтесь</p>
-          <ul class="footer-social-container__list">
-            <li class="footer-social-container__item">
-              <a href="" class="footer-social-container__link">
-                <svg class="footer-social-container__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-container__item">
-              <a href="" class="footer-social-container__link">
-                <svg class="footer-social-container__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-container__item">
-              <a href="" class="footer-social-container__link">
-                <svg class="footer-social-container__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-container__item">
-              <a href="" class="footer-social-container__link">
-                <svg class="footer-social-container__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="tablet">
+          <!-- Адрес и контакты -->
+          <address class="footer-address" id="address">
+            <a class="logo-white" lang="en" href="index.html"
+              ><span class="logo-web">Web</span>Studio</a
+            >
+            <a
+              class="footer-address__location"
+              href="https://goo.gl/maps/ibRqbfUvFssrjPC37"
+              target="_blank"
+              rel="noreferrer noopener"
+              >г. Киев, пр-т Леси Украинки, 26
+            </a>
+            <a class="footer-address__link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="footer-address__link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+          <div class="footer-social-container">
+            <p class="footer-social-container__title">присоединяйтесь</p>
+            <ul class="footer-social-container__list">
+              <li class="footer-social-container__item">
+                <a href="" class="footer-social-container__link">
+                  <svg class="footer-social-container__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-container__item">
+                <a href="" class="footer-social-container__link">
+                  <svg class="footer-social-container__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-container__item">
+                <a href="" class="footer-social-container__link">
+                  <svg class="footer-social-container__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-container__item">
+                <a href="" class="footer-social-container__link">
+                  <svg class="footer-social-container__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-subscribe-container">
           <p class="footer-subscribe-container__title">
@@ -398,5 +467,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
