@@ -28,7 +28,7 @@
 
     .contacts-nav-list__link:hover &,
     .contacts-nav-list__link:focus & {
-      fill: var(--accent-color);
+      fill: var(--accent-text-color);
     }
   }
 
@@ -39,7 +39,7 @@
 
     .contacts-nav-list__link:hover &,
     .contacts-nav-list__link:focus & {
-      fill: var(--accent-color);
+      fill: var(--accent-text-color);
     }
   }
 }

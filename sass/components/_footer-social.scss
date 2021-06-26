@@ -125,6 +125,11 @@
   .footer-container {
     display: flex;
     align-items: baseline;
+    margin: auto;
+    // justify-content: space-between;
+  }
+  .footer-address {
+    padding-right: 15px;
   }
   .footer-social-container {
     margin-left: 70px;

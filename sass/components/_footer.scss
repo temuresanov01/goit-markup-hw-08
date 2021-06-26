@@ -2,5 +2,12 @@
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    background-color: #2f303a;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: center;
+  }
 }

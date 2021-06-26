@@ -60,6 +60,41 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-container {
+    margin-left: 93px;
+  }
+  .tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .footer-subscribe-container__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-subscribe-container__input {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+    // height: 50px;
+    // border: 1px solid rgba(255, 255, 255, 0.3);
+    // border-radius: 4px;
+    // color: rgba(255, 255, 255, 0.6);
+    // font-size: 16px;
+    // line-height: 1.25;
+    // background-color: rgba(33, 150, 243, 0);
+    // padding-left: 16px;
+    // margin-right: 12px;
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    // &:hover,
+    // &:focus {
+    //   outline: none;
+    // }
+  }
+}
+// ========== КОНЕЦ 1200
+
 .footer-subscribe-container__button--subscribe {
   display: inline-flex;
   align-items: center;
