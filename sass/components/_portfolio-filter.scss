@@ -58,14 +58,14 @@
   .button-filter-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 400px) {
   .button-filter-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .button-filter-list__item:first-child {
     margin-bottom: 15px;
@@ -75,11 +75,11 @@
   .button-filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button-filter-list {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
