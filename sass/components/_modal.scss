@@ -6,6 +6,7 @@
   // width: 528px;
   // height: 581px;
   padding: 40px;
+  margin: 93px 15px 94px 0px;
   background-color: var(--title-text-color-secondary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -183,7 +184,6 @@
 }
 @media screen and (max-width: 480px) {
   .modal {
-    margin: 93px 15px 94px 15px;
     width: 100%;
     height: 609px;
     top: 50%;
@@ -193,6 +193,7 @@
 }
 @media screen and (min-width: 480px) {
   .modal {
+    margin: unset;
     width: 450px;
     height: 609px;
     top: 50%;
