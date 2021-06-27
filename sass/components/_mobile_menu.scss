@@ -38,13 +38,15 @@
 
   .mobile-menu__close-btn {
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 10px;
     right: 15px;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
-
+    align-items: center;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,7 +108,7 @@
 
     &-item {
       font-weight: 500;
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.2;
       letter-spacing: 0.02em;
 
@@ -123,6 +125,7 @@
     }
     &-link {
       color: var(--accent-text-color);
+      font-size: 18px;
     }
   }
 }
